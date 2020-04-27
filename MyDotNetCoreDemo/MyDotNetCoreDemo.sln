@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDotNetCoreDemo", "MyDotNetCoreDemo\MyDotNetCoreDemo.csproj", "{CFDED599-02BE-45DA-85BF-F3735AFFA2B1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreDemoDAL", "CoreDemoDAL", "{ECE3567B-E700-4D86-B870-8B30126B8070}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreDemoBLL", "CoreDemoBLL", "{5EAECB1C-E412-460E-AE5E-059DFFECFB77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreDemoUI", "CoreDemoUI", "{6E1B3DAD-9CF8-4339-ACEC-4657B380C7DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreDemoFarmWork", "CoreDemoFarmWork", "{C6CF8B5F-F818-4E82-B17E-1C7DA55C0D86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDemoMvc", "MyDemoMvc\MyDemoMvc.csproj", "{FA427C34-924D-461B-AABB-F7F986D91D99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.CoreDemo.Interface", "My.CoreDemo.Interface\My.CoreDemo.Interface.csproj", "{2698A943-C782-4FE0-A253-9172C9F1C05B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.CoreDemo.Service", "My.CoreDemo.Service\My.CoreDemo.Service.csproj", "{68BEB3B9-FA0C-4346-B8B9-28CAB5A1727A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +23,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CFDED599-02BE-45DA-85BF-F3735AFFA2B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CFDED599-02BE-45DA-85BF-F3735AFFA2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CFDED599-02BE-45DA-85BF-F3735AFFA2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CFDED599-02BE-45DA-85BF-F3735AFFA2B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA427C34-924D-461B-AABB-F7F986D91D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA427C34-924D-461B-AABB-F7F986D91D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA427C34-924D-461B-AABB-F7F986D91D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA427C34-924D-461B-AABB-F7F986D91D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2698A943-C782-4FE0-A253-9172C9F1C05B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2698A943-C782-4FE0-A253-9172C9F1C05B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2698A943-C782-4FE0-A253-9172C9F1C05B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2698A943-C782-4FE0-A253-9172C9F1C05B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68BEB3B9-FA0C-4346-B8B9-28CAB5A1727A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68BEB3B9-FA0C-4346-B8B9-28CAB5A1727A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68BEB3B9-FA0C-4346-B8B9-28CAB5A1727A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68BEB3B9-FA0C-4346-B8B9-28CAB5A1727A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA427C34-924D-461B-AABB-F7F986D91D99} = {6E1B3DAD-9CF8-4339-ACEC-4657B380C7DA}
+		{2698A943-C782-4FE0-A253-9172C9F1C05B} = {5EAECB1C-E412-460E-AE5E-059DFFECFB77}
+		{68BEB3B9-FA0C-4346-B8B9-28CAB5A1727A} = {5EAECB1C-E412-460E-AE5E-059DFFECFB77}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AFA658E2-6135-46D0-B5C1-0F045404D41D}
