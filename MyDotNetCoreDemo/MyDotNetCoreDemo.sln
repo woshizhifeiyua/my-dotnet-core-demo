@@ -11,11 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreDemoUI", "CoreDemoUI", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreDemoFarmWork", "CoreDemoFarmWork", "{C6CF8B5F-F818-4E82-B17E-1C7DA55C0D86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDemoMvc", "MyDemoMvc\MyDemoMvc.csproj", "{FA427C34-924D-461B-AABB-F7F986D91D99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDemoMvc", "MyDemoMvc\MyDemoMvc.csproj", "{FA427C34-924D-461B-AABB-F7F986D91D99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.CoreDemo.Interface", "My.CoreDemo.Interface\My.CoreDemo.Interface.csproj", "{2698A943-C782-4FE0-A253-9172C9F1C05B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My.CoreDemo.Interface", "My.CoreDemo.Interface\My.CoreDemo.Interface.csproj", "{2698A943-C782-4FE0-A253-9172C9F1C05B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.CoreDemo.Service", "My.CoreDemo.Service\My.CoreDemo.Service.csproj", "{68BEB3B9-FA0C-4346-B8B9-28CAB5A1727A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My.CoreDemo.Service", "My.CoreDemo.Service\My.CoreDemo.Service.csproj", "{68BEB3B9-FA0C-4346-B8B9-28CAB5A1727A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoFarmWork", "DemoFarmWork\DemoFarmWork.csproj", "{EC74B1B3-770C-4244-B40A-97070521FBD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{68BEB3B9-FA0C-4346-B8B9-28CAB5A1727A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68BEB3B9-FA0C-4346-B8B9-28CAB5A1727A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68BEB3B9-FA0C-4346-B8B9-28CAB5A1727A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC74B1B3-770C-4244-B40A-97070521FBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC74B1B3-770C-4244-B40A-97070521FBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC74B1B3-770C-4244-B40A-97070521FBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC74B1B3-770C-4244-B40A-97070521FBD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{FA427C34-924D-461B-AABB-F7F986D91D99} = {6E1B3DAD-9CF8-4339-ACEC-4657B380C7DA}
 		{2698A943-C782-4FE0-A253-9172C9F1C05B} = {5EAECB1C-E412-460E-AE5E-059DFFECFB77}
 		{68BEB3B9-FA0C-4346-B8B9-28CAB5A1727A} = {5EAECB1C-E412-460E-AE5E-059DFFECFB77}
+		{EC74B1B3-770C-4244-B40A-97070521FBD8} = {C6CF8B5F-F818-4E82-B17E-1C7DA55C0D86}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AFA658E2-6135-46D0-B5C1-0F045404D41D}
