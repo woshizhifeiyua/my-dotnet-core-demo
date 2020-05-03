@@ -12,6 +12,7 @@ namespace MyDemoMvc.Controllers
 {
     public class HomeController : Controller
     {
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -24,6 +25,7 @@ namespace MyDemoMvc.Controllers
        [MyResourceFilter]
         public IActionResult Index()
         {
+
             return View();
         }
 

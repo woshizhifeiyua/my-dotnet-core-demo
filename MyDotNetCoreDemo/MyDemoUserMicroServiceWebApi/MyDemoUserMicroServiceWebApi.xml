@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyDemoUserMicroServiceWebApi</name>
+    </assembly>
+    <members>
+        <member name="M:MyDemoUserMicroServiceWebApi.Utility.ConsulHelper.ConsulRegist(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            consul的注册
+            </summary>
+            <param name="configuration"></param>
+        </member>
+    </members>
+</doc>
