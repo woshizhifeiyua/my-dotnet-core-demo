@@ -138,17 +138,17 @@
     {
       "DownstreamPathTemplate": "/{url}", //服务地址--url变量 下游路径模板
       "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/{url}", //网关地址--url变量 //上游路径模板
+      "UpstreamPathTemplate": "/T/{url}", //网关地址--url变量 //上游路径模板
       "UpstreamHttpMethod": [ "GET", "POST", "DELETE", "PUT" ],
       "ServiceName": "UserService", //consul服务名称
       "LoadBalancerOptions": {
         "Type": "RoundRobin" //轮询      LeastConnection-最少连接数的服务器   NoLoadBalance不负载均衡
       },
-      "AuthenticationOptions": {
-        "authenticactionProvideKey": "UserGatewayKey",
-        "AllowedScopens": []//作用域的配置等等
+      //"AuthenticationOptions": {
+      //  "authenticactionProvideKey": "UserGatewayKey",
+      //  "AllowedScopens": []//作用域的配置等等
 
-      },
+      //},
       "UseServiceDiscovery": true,
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3, //允许多少个异常请求

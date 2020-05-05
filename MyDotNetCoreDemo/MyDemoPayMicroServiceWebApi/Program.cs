@@ -23,10 +23,17 @@ namespace MyDemoPayMicroServiceWebApi
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                //.ConfigureAppConfiguration((hostContext, config) =>
+                //{
+                //    var env = hostContext.HostingEnvironment;
+                //    config.SetBasePath(Path.Combine(env.ContentRootPath, "Configuration"))
+                //        .AddJsonFile(path: "appsettings.json", optional: false, reloadOnChange: true)
+                //        .AddJsonFile(path: $"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+                //})
             .ConfigureLogging(logging => //支持IOC  控制反转
             {
-                logging.AddFilter("System", LogLevel.Warning);  //忽略系统日志
-                logging.AddFilter("Microsoft", LogLevel.Warning);   //忽略系统日志
+                logging.AddFilter("System", LogLevel.Information);  //忽略系统日志
+                logging.AddFilter("Microsoft", LogLevel.Information);   //忽略系统日志
                 logging.AddLog4Net("Config/log4net.Config");
             })
              .ConfigureWebHostDefaults(webBuilder =>

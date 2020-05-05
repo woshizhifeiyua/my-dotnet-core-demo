@@ -29,9 +29,16 @@ namespace MyDemoPayMicroServiceWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+
+//            IsDevelopment()
+//IsStaging()
+//IsProduction()
+//IsEnvironment()
             services.AddControllers();
+
             #region swagger 
-  
+
 
             if (Configuration["Swagger:IsRegist"] == bool.TrueString)
             {
@@ -65,7 +72,7 @@ namespace MyDemoPayMicroServiceWebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
+           
             app.UseHttpsRedirection();
 
             app.UseRouting();
